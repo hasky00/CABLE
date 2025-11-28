@@ -1,9 +1,11 @@
-# CABLE Firmware
+# Smart Printer Flow Example
 
-This directory contains a **conceptual skeleton** for the CABLE firmware.
+This demonstrates how a CABLE module interacts with a printer.
 
-- `main.c` – entry point and event loop
-- `cable_hal.[ch]` – hardware abstraction
-- `protocol.h` – simple message format between module and gateway
+## Flow
 
-This is not tied to a specific MCU yet; adapt to your chosen platform.
+1. Printer sends status to Gateway
+2. Gateway interprets device profile
+3. User sends command `start_print`
+4. Module actuates pins to start job
+5. Status updates stream live via WebSocket

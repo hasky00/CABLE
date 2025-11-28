@@ -1,0 +1,24 @@
+{
+  "id": "printer-001",
+  "type": "printer",
+  "name": "Office Laser Printer",
+  "capabilities": {
+    "start_print": {
+      "description": "Start a print job",
+      "params": {
+        "jobId": { "type": "string", "required": true }
+      }
+    },
+    "cancel": {
+      "description": "Cancel current print job"
+    },
+    "get_status": {
+      "description": "Query current status"
+    }
+  },
+  "signals": {
+    "paper_out": "GPIO12",
+    "door_open": "GPIO13",
+    "status_led": "GPIO2"
+  }
+}
