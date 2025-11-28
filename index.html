@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CABLE – Make Dumb Appliances Smart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #020617;
+      color: #e5e7eb;
+    }
+    header {
+      padding: 2rem 1.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      border: 2px solid #10b981;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      color: #10b981;
+    }
+    .logo-text {
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #f9fafb;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+    }
+    h1 span {
+      color: #10b981;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      max-width: 640px;
+      color: #9ca3af;
+      margin-bottom: 1.5rem;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+      gap: 2rem;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid #10b98133;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #6ee7b7;
+      margin-bottom: 0.75rem;
+    }
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #22c55e;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+    .btn {
+      padding: 0.7rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: #10b981;
+      color: #022c22;
+    }
+    .btn-secondary {
+      background: transparent;
+      border-color: #4b5563;
+      color: #e5e7eb;
+    }
+    .meta {
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+    .card {
+      border-radius: 1rem;
+      padding: 1.25rem;
+      background: radial-gradient(circle at top left, #10b98122, #020617);
+      border: 1px solid #1f2937;
+      font-size: 0.9rem;
+    }
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      color: #e5e7eb;
+    }
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.8rem;
+    }
+    .chip {
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+      border: 1px solid #4b5563;
+      font-size: 0.75rem;
+      color: #9ca3af;
+    }
+    section {
+      margin-top: 3rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .feature {
+      padding: 1rem;
+      border-radius: 0.9rem;
+      border: 1px solid #111827;
+      background: #020617;
+      font-size: 0.9rem;
+    }
+    .feature h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      color: #e5e7eb;
+    }
+    footer {
+      border-top: 1px solid #111827;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: #6b7280;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-mark">C</div>
+      <div class="logo-text">CABLE</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero-grid">
+      <div>
+        <div class="pill">
+          <div class="pill-dot"></div>
+          Early prototype • Open hardware + software
+        </div>
+        <h1>Make <span>dumb appliances</span> talk, listen, and think.</h1>
+        <p class="subtitle">
+          CABLE is a universal connector that sits between your hardware and your software,
+          turning printers, fridges, and other household machines into smart, programmable,
+          autonomous devices.
+        </p>
+        <div class="buttons">
+          <a href="https://github.com/hasky00/CABLE" class="btn btn-primary">View on GitHub</a>
+          <a href="docs/overview.md" class="btn btn-secondary">Read the overview</a>
+        </div>
+        <p class="meta">
+          Local-first by design • Retrofit existing appliances • Built for hackers, makers,
+          and hardware-curious developers.
+        </p>
+      </div>
+      <div>
+        <div class="card">
+          <div class="card-title">How CABLE works</div>
+          <p>
+            A small module taps into your appliance's control lines, runs lightweight firmware,
+            and speaks to a gateway server over WiFi or serial.
+            The server exposes clean APIs and events for apps, scripts, and voice assistants.
+          </p>
+          <div class="chip-row">
+            <div class="chip">MCU + IO pins</div>
+            <div class="chip">Firmware event loop</div>
+            <div class="chip">REST & WebSocket API</div>
+            <div class="chip">Device profiles</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h2>What can you build with CABLE?</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <h3>Smart printer</h3>
+          <p>
+            Monitor status, trigger jobs, and let the printer order its own ink when levels run low.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Aware fridge</h3>
+          <p>
+            Track door events and temperature, send alerts, and sync with shopping lists or inventory tools.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Energy-savvy washer</h3>
+          <p>
+            Run cycles automatically when energy prices are lowest and notify your phone when it's done.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Custom automations</h3>
+          <p>
+            Tie everything together with scripts, home automation rules, or your own AI agents.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    CABLE is an experimental, open project. Clone it, break it, extend it, and make your machines talk.
+  </footer>
+</body>
+</html>
